@@ -1,20 +1,8 @@
-{
-  "name": "express-automation-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "express": "^5.2.1"
-  },
-  "devDependencies": {
-    "cypress": "^15.11.0"
-  }
-}
+Set-Location "C:\dev\express-automation-app"
+
+Set-Content -Path "package.json" -Value (Get-Clipboard)
+
+git add package.json
+git commit -m "Update package.json with correct start script and dependencies"
+git push
+
